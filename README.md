@@ -14,3 +14,4 @@ Currently planned conversion:
 
  - Time.
  - More distances (imperial, also from and to metric).
+ - Data sizes.

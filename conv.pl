@@ -2,11 +2,7 @@
 use strict;
 use warnings;
 
-# This scipt will be a massive conversion tool, the following measurements and
-# scales are planned to be implemented:
-#       - Distance (imperials, coverters from and to metric too!).
-#       - Time (nanoseconds, seconds, minutes, hours, days).
-# I might also covert the script to bash, but for now I wanna learn Perl!
+# This scipt will be a massive conversion tool, check the github repo for more.
 
 # Call main menu.
 &menu;
@@ -74,11 +70,11 @@ sub menu {
     }
     elsif ($distOpt eq 5) {
       # Was CM into M.
-      print ("$dvalue centimeter(s) is equal to ", $dvalue / 1000, " meter(s).\n\n");
+      print ("$dvalue centimeter(s) is equal to ", $dvalue / 100, " meter(s).\n\n");
     }
     elsif ($distOpt eq 6) {
       # Was M into CM.
-      print ("$dvalue meter(s) is equal to ", $dvalue * 1000, " centimeter(s).\n\n");
+      print ("$dvalue meter(s) is equal to ", $dvalue * 100, " centimeter(s).\n\n");
     }
     else {
       # Not an option.
