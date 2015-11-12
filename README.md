@@ -6,6 +6,30 @@ Ever find your self fiddling around with Google in order to convert something? W
 
 Also I wanted to learn a bit about Perl.
 
+#### Features
+
+ - Convert distances:
+    - Metric.
+    - Imperial.
+ - Convert temperatures:
+    - Kelvin.
+    - Celsius.
+    - Farhrenheit
+ - Convert Data Sizes:
+    - Bytes (B, kB, mB, gB, tB, pB).
+    - Bits (b, Kb, Mb, Gb, Tb, Pb).
+
+#### Plans
+
+I want to pack as much math into this script as possible and maybe have sister script written in bash.
+
+Currently planned conversions:
+
+ - Time conversions, e.g minutes, hours etc.
+ - Energy units.
+ - Areas.
+ - Circles (radius, diameter, circumference etc.).
+
 #### Installation
 
 ##### Perl check
@@ -46,15 +70,3 @@ then you have it :D
 4. Call it using `conv.pl` anywhere in the terminal.
 
 5. Profit.
-
-#### Plans
-
-I want to add as much math(s) into this script as possible and maybe have sister script written in bash.
-
-Currently planned conversions:
-
- - Time conversions, e.g minutes, hours etc.
- - Data sizes.
- - Energy units.
- - Areas.
- - Circles (radius, diameter, circumference etc.).
