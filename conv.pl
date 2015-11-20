@@ -6,11 +6,11 @@ use warnings;
 # Made by github.com/JetLaggedEgg.
 
 # Title for script.
-print ("\nWelcome to Convertinator.\n");
+print ("\nWelcome to Convertinator. v1.2.1\n");
 
 &menu;     # Activate menu on load.
 
-# Main menu block.
+# Main Menu Module.
 sub menu {
   # Variables.
   my $option = "";    # Declaring empty option variable.
@@ -49,7 +49,7 @@ sub menu {
   }
 }
 
-# Distance menus.
+# Distance Module.
 sub distMenu {
   # Menu variables.
   my $opt1 = "";    # First option, one to be converted.
@@ -72,7 +72,7 @@ sub distMenu {
   $opt1 = <>;       # Take input.
   chomp ($opt1);    # Clean input.
 
-  # Check for main menu or quit.
+  # Check for main menu or quit in option 1.
   if ($opt1 eq "m") {
    # Move to main menu.
    print ("\n");
@@ -86,6 +86,17 @@ sub distMenu {
   print (" To option : "); # Ask for option 2.
   $opt2 = <>;       # Take input.
   chomp ($opt2);    # Clean input.
+
+  # Check for main menu or quit in option 2.
+  if ($opt2 eq "m") {
+   # Move to main menu.
+   print ("\n");
+   &menu;
+  } elsif ($opt2 eq "q") {
+   # Exit script.
+   print ("\nExiting...\n\n");
+   exit;
+  }
 
   print ("   Value   : "); # Ask for value of option 1.
   $value = <>;       # Take input.
@@ -195,7 +206,7 @@ sub distMenu {
   &distMenu;
 }
 
-# Temperature menus.
+# Temperature Module.
 sub tempMenu {
   # Menu variables.
   my $opt1 = "";    # First option, one to be converted.
@@ -215,7 +226,7 @@ sub tempMenu {
   $opt1 = <>;       # Take input.
   chomp ($opt1);    # Clean input.
 
-  # Check for main menu or quit.
+  # Check for main menu or quit in option 1.
   if ($opt1 eq "m") {
    # Move to main menu.
    print ("\n");
@@ -229,6 +240,17 @@ sub tempMenu {
   print (" To option : "); # Ask for option 2.
   $opt2 = <>;       # Take input.
   chomp ($opt2);    # Clean input.
+
+  # Check for main menu or quit in option 2.
+  if ($opt2 eq "m") {
+   # Move to main menu.
+   print ("\n");
+   &menu;
+  } elsif ($opt2 eq "q") {
+   # Exit script.
+   print ("\nExiting...\n\n");
+   exit;
+  }
 
   print ("   Value   : "); # Ask for value of option 1.
   $value = <>;       # Take input.
@@ -264,15 +286,15 @@ sub tempMenu {
   if ($opt2 eq 1) {
     # Convert to celsius.
     $answer = $stdvalue;
-    printf ("$value $opt1 is about %.3f celsius.\n", $answer); #Print'n'round.
+    printf ("$value $opt1 is about %.3f degrees celsius.\n", $answer); #Print'n'round.
   } elsif ($opt2 eq 2) {
     # Convert to fahrenheit.
     $answer = (($stdvalue * 9) / 5) + 32;
-    printf ("$value $opt1 is about %.3f fahrenheit.\n", $answer); #Print'n'round.
+    printf ("$value $opt1 is about %.3f degrees fahrenheit.\n", $answer); #Print'n'round.
   } elsif ($opt2 eq 3) {
     # Convert to kelvin.
     $answer = $stdvalue - 273.15;
-    printf ("$value $opt1 is about %.3f kelvin.\n", $answer); #Print'n'round.
+    printf ("$value $opt1 is about %.3f degrees kelvin.\n", $answer); #Print'n'round.
   } else {
     # Input not recognised.
     print ("I'm sorry, option \'$opt2\' was not reconised.\n\n");
@@ -282,7 +304,7 @@ sub tempMenu {
   &tempMenu;
 }
 
-# Data Sizes menus.
+# Data Sizes Module.
 sub dataMenu {
   # Menu variables.
   my $opt1 = "";    # First option, one to be converted.
@@ -306,7 +328,7 @@ sub dataMenu {
   $opt1 = <>;       # Take input.
   chomp ($opt1);    # Clean input.
 
-  # Check for main menu or quit.
+  # Check for main menu or quit in option 1.
   if ($opt1 eq "m") {
    # Move to main menu.
    print ("\n");
@@ -320,6 +342,17 @@ sub dataMenu {
   print (" To option : "); # Ask for option 2.
   $opt2 = <>;       # Take input.
   chomp ($opt2);    # Clean input.
+
+  # Check for main menu or quit in option 2.
+  if ($opt2 eq "m") {
+   # Move to main menu.
+   print ("\n");
+   &menu;
+  } elsif ($opt2 eq "q") {
+   # Exit script.
+   print ("\nExiting...\n\n");
+   exit;
+  }
 
   print ("   Value   : "); # Ask for value of option 1.
   $value = <>;       # Take input.

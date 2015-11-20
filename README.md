@@ -8,10 +8,10 @@ Also I wanted to learn a bit about Perl.
 
 #### Features
 
- - Convert distances:
+ - Convert Distances:
     - Metric.
     - Imperial.
- - Convert temperatures:
+ - Convert Temperatures:
     - Kelvin.
     - Celsius.
     - Farhrenheit
