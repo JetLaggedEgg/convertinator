@@ -34,7 +34,7 @@ Currently planned conversions:
 
 ##### Perl check
 
-To install this script you must have Perl, if you are running a unix or unix-like system them you most probably have it installed as it was used in creating many features right at the dawn of the *nix s. Otherwise it's simple to install.
+To install this script you must have Perl, if you are running a unix or unix-like system them you most probably have it installed as it was used in creating many features right at the dawn of the unix and unix-like systems. Otherwise it's simple to install.
 
 To check if you have it, open your terminal and type in:
 
@@ -55,7 +55,7 @@ then you have it :D
 
 * Directory 'A' - for a system wide install is `/bin/` or `/usr/bin/`.
 
-* Directory 'B' - for a user only install is `/home/$URusername/bin/` or `~/bin/`. Note you may have to make this directory.
+* Directory 'B' - for a user only install is `/home/$USER/bin/` or `~/bin/`. Note you may have to make this directory.
 
 ##### Installation
 
@@ -67,6 +67,6 @@ then you have it :D
 
 3. Correct its permissions using `sudo chmod 755 conv.pl`.
 
-4. Call it using `conv.pl` anywhere in the terminal.
+4. Call it using `conv.pl` anywhere in the terminal, you may also rename the file just `conv` allowing you to call it just using the command `conv`.
 
 5. Profit.
